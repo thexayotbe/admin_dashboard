@@ -5,7 +5,7 @@ import { useNotificationProvider } from "@refinedev/antd";
 
 import "@refinedev/antd/dist/reset.css";
 
-import { dataProvider, liveProvider } from "./providers";
+import { authProvider, dataProvider, liveProvider } from "./providers";
 import { App as AntdApp } from "antd";
 
 import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
@@ -13,7 +13,6 @@ import routerBindings, {
   UnsavedChangesNotifier,
   DocumentTitleHandler,
 } from "@refinedev/react-router-v6";
-
 function App() {
   return (
     <BrowserRouter>
@@ -26,7 +25,7 @@ function App() {
               liveProvider={liveProvider}
               notificationProvider={useNotificationProvider}
               routerProvider={routerBindings}
-              // authProvider={}
+              authProvider={authProvider}
               options={{
                 syncWithLocation: true,
                 warnWhenUnsavedChanges: true,
@@ -48,5 +47,4 @@ function App() {
     </BrowserRouter>
   );
 }
-
 export default App;
