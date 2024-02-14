@@ -63,7 +63,6 @@ export const authProvider: AuthProvider = {
         logout: true,
       };
     }
-
     return { error };
   },
   check: async () => {
@@ -82,7 +81,6 @@ export const authProvider: AuthProvider = {
                 `,
         },
       });
-
       return {
         authenticated: true,
         redirectTo: "/",

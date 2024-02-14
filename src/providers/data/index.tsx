@@ -24,7 +24,6 @@ export const wsClient =
         url: WS_URL,
         connectionParams: () => {
           const accessToken = localStorage.getItem("access_token");
-
           return {
             headers: {
               Authotization: `Bearer ${accessToken}`,
