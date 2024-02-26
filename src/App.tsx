@@ -2,9 +2,7 @@ import { Refine, GitHubBanner, WelcomePage } from "@refinedev/core";
 import { DevtoolsPanel, DevtoolsProvider } from "@refinedev/devtools";
 import { RefineKbar, RefineKbarProvider } from "@refinedev/kbar";
 import { useNotificationProvider } from "@refinedev/antd";
-
 import "@refinedev/antd/dist/reset.css";
-
 import { authProvider, dataProvider, liveProvider } from "./providers";
 import { App as AntdApp } from "antd";
 import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
