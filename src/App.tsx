@@ -7,7 +7,6 @@ import "@refinedev/antd/dist/reset.css";
 
 import { authProvider, dataProvider, liveProvider } from "./providers";
 import { App as AntdApp } from "antd";
-
 import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
 import routerBindings, {
   UnsavedChangesNotifier,
@@ -32,7 +31,8 @@ function App() {
                 useNewQueryKeys: true,
                 projectId: "6G4H3A-Tlh7Uw-nyDtoQ",
                 liveMode: "auto",
-              }}>
+              }}
+            >
               <Routes>
                 <Route index element={<WelcomePage />} />
               </Routes>
