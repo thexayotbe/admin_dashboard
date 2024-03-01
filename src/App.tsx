@@ -10,7 +10,6 @@ import routerBindings, {
   UnsavedChangesNotifier,
   DocumentTitleHandler,
 } from "@refinedev/react-router-v6";
-
 function App() {
   return (
     <BrowserRouter>
